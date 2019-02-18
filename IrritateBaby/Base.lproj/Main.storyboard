@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z0X-h2-sjU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Wfw-L5-YBN">
+            <objects>
+                <viewController id="z0X-h2-sjU" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P0p-Xy-hEo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_background" translatesAutoresizingMaskIntoConstraints="NO" id="3nF-Qu-T8T">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yka-I4-0ub">
+                                <rect key="frame" x="13" y="127" width="349" height="412"/>
+                                <string key="text">イヤイヤ期は
+思うようにコミュニケーションがとれず
+たいへんですよね。
+
+このアプリは
+お子さんが目的地に向かうように
+あなたに代わって案内します。
+
+カメラを目的地に向けて
+ボタンをタップ
+現れたトンネルをくぐっていくと…
+さいごにカワイイ出会いが。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTU-vh-5Cm">
+                                <rect key="frame" x="112.5" y="518" width="150" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="bg3-Sj-a9M"/>
+                                    <constraint firstAttribute="height" constant="45" id="w8Z-Bx-B39"/>
+                                </constraints>
+                                <state key="normal" title="はじめる" backgroundImage="button_background">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="showDetail" id="xpZ-h6-xhp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Yka-I4-0ub" firstAttribute="top" secondItem="PXk-kT-PqR" secondAttribute="top" constant="107" id="39i-U9-vOg"/>
+                            <constraint firstItem="BTU-vh-5Cm" firstAttribute="top" secondItem="3nF-Qu-T8T" secondAttribute="bottom" constant="-149" id="5bA-uX-6Ck"/>
+                            <constraint firstItem="3nF-Qu-T8T" firstAttribute="leading" secondItem="PXk-kT-PqR" secondAttribute="leading" id="6dX-hP-b3x"/>
+                            <constraint firstItem="3nF-Qu-T8T" firstAttribute="bottom" secondItem="PXk-kT-PqR" secondAttribute="bottom" id="8Ze-ag-bBN"/>
+                            <constraint firstItem="3nF-Qu-T8T" firstAttribute="trailing" secondItem="PXk-kT-PqR" secondAttribute="trailing" id="ODq-p4-7hE"/>
+                            <constraint firstItem="Yka-I4-0ub" firstAttribute="leading" secondItem="PXk-kT-PqR" secondAttribute="leading" constant="13" id="Wag-bV-yqS"/>
+                            <constraint firstItem="3nF-Qu-T8T" firstAttribute="top" secondItem="P0p-Xy-hEo" secondAttribute="top" id="cda-CR-82j"/>
+                            <constraint firstItem="PXk-kT-PqR" firstAttribute="trailing" secondItem="Yka-I4-0ub" secondAttribute="trailing" constant="13" id="d8E-sD-C3U"/>
+                            <constraint firstItem="BTU-vh-5Cm" firstAttribute="centerX" secondItem="PXk-kT-PqR" secondAttribute="centerX" id="x7W-6T-mf7"/>
+                            <constraint firstItem="PXk-kT-PqR" firstAttribute="bottom" secondItem="Yka-I4-0ub" secondAttribute="bottom" constant="128" id="z9d-fg-wCF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PXk-kT-PqR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TJv-Al-EIG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7hu-0P-Hhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="384.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Navigator View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="NavigatorViewController" customModule="IrritateBaby" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JD1-fY-SLs">
+                                <rect key="frame" x="77.5" y="563" width="220" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2Ti-p0-SLl"/>
+                                    <constraint firstAttribute="width" constant="220" id="oqd-4r-0zE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="こっちにあるいてね" backgroundImage="button_background">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startDidTap:" destination="BV1-FR-VrT" eventType="touchUpInside" id="o5C-nV-IhS"/>
+                                </connections>
+                            </button>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ck4-b7-za4" appends="YES" id="NmO-Tp-suR"/>
+                                </connections>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JD1-fY-SLs" firstAttribute="centerX" secondItem="BrB-h1-WRS" secondAttribute="centerX" id="7XG-vg-51B"/>
+                            <constraint firstItem="JD1-fY-SLs" firstAttribute="top" secondItem="BrB-h1-WRS" secondAttribute="bottom" constant="-104" id="FKA-Wv-der"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="JD1-fY-SLs" id="ZVk-7r-UqL"/>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ck4-b7-za4">
+                    <connections>
+                        <action selector="onViewTapped:" destination="BV1-FR-VrT" id="yGf-QW-vGA"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1197.5999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_background" width="1920" height="1080"/>
+        <image name="main_background" width="1920" height="1080"/>
+    </resources>
+</document>
